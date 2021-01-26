@@ -58,12 +58,12 @@ CleanMen
 - has_many :reviews
 
 ## reviewsテーブル
-| Column  | Type       | Options     |
-| ------- | ---------- | ----------- |
-| star    | integer    | null: false |
-| text    | text       | null: false |
-| user_id | references | null: false |
-| item_id | references | null: false |
+| Column | Type       | Options                        |
+| ------ | ---------- | ------------------------------ |
+| star   | integer    | null: false                    |
+| text   | text       | null: false                    |
+| user   | references | null: false, foreign_key: true |
+| item   | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :user
